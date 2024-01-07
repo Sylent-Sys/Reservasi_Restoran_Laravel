@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reservation', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->int('user_id');
-            $table->timestamp('reservation_date');
-            $table->string('reservation_by');
-            $table->string('seat_id');
+        Schema::disableForeignKeyConstraints();
 
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('seat_id')->references('id')->on('seats');
+        Schema::create('reservations', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->dateTime('reservation_date');
+            $table->string('reservation_by');
+            $table->foreignId('seat_id')->constrained();
+            $table->timestamps();
         });
+
+        Schema::enableForeignKeyConstraints();
     }
 
     /**
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reservation');
+        Schema::dropIfExists('reservations');
     }
 };

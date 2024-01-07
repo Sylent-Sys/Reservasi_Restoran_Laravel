@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
 return [
-
+    'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
     /*
     |--------------------------------------------------------------------------
     | Application Name

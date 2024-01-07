@@ -11,15 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('seats', function (Blueprint $table) {
+        Schema::disableForeignKeyConstraints();
+        
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('product_name');
+            $table->bigInt('product_price');
+            $table->bigInt('product_stock');
+            $table->foreignId('product_category_id')->constrained();
             $table->timestamps();
-            $table->int('seat_number');
-            $table->string('seat_description');
-            $table->int('seat_category_id');
-
-            $table->foreign('seat_category_id')->references('id')->on('seats_categories');
         });
+
+        Schema::enableForeignKeyConstraints();
     }
 
     /**
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('seats');
+        Schema::dropIfExists('products');
     }
 };
