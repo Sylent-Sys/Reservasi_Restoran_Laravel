@@ -16,11 +16,11 @@ use App\Http\Controllers\DropzoneController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home/home');
 });
 
-Route::get('/home', function () {
-    return view('home/home');
+Route::get('/products', function () {
+    return view('home/products');
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
