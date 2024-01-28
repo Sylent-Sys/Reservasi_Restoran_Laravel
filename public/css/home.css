@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.mainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: url("../images/resto.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.mainPage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+.mainPage header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.mainPage .logo{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.mainPage .links a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    box-shadow: inset 0 -2px 0 0 transparent; /* Initially set a transparent shadow for the underline effect */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+.mainPage .links a:hover {
+    box-shadow: inset 0 -2px 0 0 white; /* Set the shadow color to white on hover */
+}
+
+.mainPage .links .loginBtn{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 100px;
+    transition: .5s;
+}
+
+.mainPage .links .loginBtn:hover{
+    color: rgb(12, 12, 12);
+    background: white;
+}
+
+.mainPage .contents {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* You may adjust the height as needed */
+}
+
+.mainPage .contents h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px; /* Add some space between h1 and reserveBtn */
+}
+
+.mainPage .contents .reserveBtn {
+    width: 300px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.7em;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    transition: .5s;
+    padding: 10px; /* Add padding to create space between text and border */
+}
+
+.mainPage .contents .reserveBtn:hover {
+    color: rgb(12, 12, 12);
+    background: white;
+}
+
+.about{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+}
+
+.about .contents h1{
+    margin-bottom: 20px;
+    font-weight: 1500;
+}
+
+.about .contents p{
+    width: 600px;
+    text-align: justify;
+}
+
+.about .image img{
+    width: 500px;
+    height: auto;
+    margin-left: 40px;
+}
