@@ -157,7 +157,7 @@
             </div>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-                <span class="avatar avatar-sm" style="background-image: url({{ asset('tabler/static/avatars/000m.jpg') }}"></span>
+                <span class="avatar avatar-sm" style="background-image: url(tabler/static/avatars/000m.jpg)"></span>
                 <div class="d-none d-xl-block ps-2">
                   <div>Paweł Kuna</div>
                   <div class="mt-1 small text-secondary">UI Designer</div>
@@ -707,7 +707,7 @@
             </div>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-                <span class="avatar avatar-sm" style="background-image: url({{ asset('tabler/static/avatars/000m.jpg') }}"></span>
+                <span class="avatar avatar-sm" style="background-image: url('tabler/static/avatars/000m.jpg')"></span>
                 <div class="d-none d-xl-block ps-2">
                   <div>Paweł Kuna</div>
                   <div class="mt-1 small text-secondary">UI Designer</div>
@@ -1066,7 +1066,7 @@
                           <div>
                             <div class="row">
                               <div class="col-auto">
-                                <span class="avatar" style="background-image: url({{ asset('tabler/static/avatars/002m.jpg') }}"></span>
+                                <span class="avatar" style="background-image: url('tabler/static/avatars/002m.jpg')"></span>
                               </div>
                               <div class="col">
                                 <div class="text-truncate">
@@ -1332,7 +1332,7 @@
                       <tbody>
                         <tr>
                           <td class="w-1">
-                            <span class="avatar avatar-sm" style="background-image: url({{ asset('tabler/static/avatars/000m.jpg') }}"></span>
+                            <span class="avatar avatar-sm" style="background-image: url('tabler/static/avatars/000m.jpg')"></span>
                           </td>
                           <td class="td-truncate">
                             <div class="text-truncate">
@@ -1519,7 +1519,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-4">
-                <a href="https://github.com/sponsors/codecalm" class="card card-sponsor" target="_blank" rel="noopener" style="background-image: url({{ asset('tabler/static/sponsor-banner-homepage.svg') }}" aria-label="Sponsor Tabler!">
+                <a href="https://github.com/sponsors/codecalm" class="card card-sponsor" target="_blank" rel="noopener" style="background-image: url('tabler/static/sponsor-banner-homepage.svg')" aria-label="Sponsor Tabler!">
                   <div class="card-body"></div>
                 </a>
               </div>
@@ -1636,7 +1636,7 @@
                             3</a>
                         </td>
                         <td>
-                          <span class="avatar avatar-sm" style="background-image: url({{ asset('tabler/static/avatars/000m.jpg') }}"></span>
+                          <span class="avatar avatar-sm" style="background-image: url('tabler/static/avatars/000m.jpg')"></span>
                         </td>
                       </tr>
                       <tr>
