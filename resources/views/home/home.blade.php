@@ -14,14 +14,14 @@
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>
                 <a href="product">Products</a>
-                <button class="loginBtn">Login</button>
+                <button class="loginBtn" onclick="window.location.href='/login'">Login</button>
             </nav>
         </header>
 
         <div class="contents">
             <h1>Currently one of the Top 100</h1>
             <h1>Restaurants Around the World!</h1>
-            <button class="reserveBtn">Reserve Now!</button>
+            <button class="reserveBtn" onclick="window.location.href='/login'">Reserve Now!</button>
         </div>
     </div>
     
