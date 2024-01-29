@@ -15,7 +15,7 @@ return new class extends Migration
 
         Schema::create('seats', function (Blueprint $table) {
             $table->id();
-            $table->int('seat_number');
+            $table->integer('seat_number');
             $table->string('seat_description');
             $table->foreignId('seat_category_id')->constrained();
             $table->timestamps();

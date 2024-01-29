@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('reservation_id')->constrained();
-            $table->bigInt('pembayaran_total');
+            $table->bigInteger('pembayaran_total');
             $table->string('pembayaran_method');
             $table->timestamps();
         });
