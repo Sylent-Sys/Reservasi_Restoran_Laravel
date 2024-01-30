@@ -24,6 +24,10 @@ Route::get('/products', function () {
     return view('home/products');
 });
 
+Route::middleware(['auth', 'admin'])->name('admin')->prefix('admin')->group(function(){
+    
+});
+
 // Auth
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'proseslogin'])->name('login.post');
